@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission: MyWeb</title>
+    <link rel="stylesheet" href="style/finalsubmission.css">
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>My Awesome</h1>
+            <h2>Portfolio</h2>
+            <p>Welcome to My World of Creativity!</p>
+        </div>
+        <nav id="myTopnav">
+            <div class="icon" onclick="myFunction()">&#9776;</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        
+        </nav>
+
+    </header>
+    <main>
+        <div id="content" class="card-container">
+            <article id="welcome" class="card-article">
+                <h2>Welcome</h2>
+                <p>Welcome to my personal portfolio website. Here, you will find a summary of various projects I am
+                    currently
+                    working on or
+                    have completed, particularly in the fields of retail information system development, inventory
+                    management,
+                    academic
+                    information systems, and Android application development. 
+                </p>
+            </article>
+    
+            <article id="skills" class="card-article">
+                <h2>Skills</h2>
+                <div id="skill-flex">
+                    <section class="card-skills">
+                        <figure>
+                            <img src="img/java.png" />
+                        </figure>
+                        <figcaption>Java Programming</figcaption>
+                    </section>
+                    <section class="card-skills">
+                        <figure>
+                            <img src="img/php.png" />
+                        </figure>
+                        <figcaption>PHP Programming</figcaption>
+                    </section>
+                    <section class="card-skills">
+                        <figure>
+                            <img src="img/python.png" />
+                        </figure>
+                        <figcaption>Python Programming</figcaption>
+                    </section>
+                    <section class="card-skills">
+                        <figure>
+                            <img src="img/csharp.png" />
+                        </figure>
+                        <figcaption>C# Programming</figcaption>
+                    </section>
+    
+                </div>
+                <div id="more">
+                    <button>more..</button>
+                </div>
+            </article>
+            <article id="project" class="card-article">
+                <h2>Projects Milestone</h2>
+                <section class="card-article">
+                    <h3>
+                        Information System of inventory
+                    </h3>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%;">70%</div>
+                    </div>
+                </section>
+                <section class="card-article">
+                    <h3>
+                        Information System of Academic
+                    </h3>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </section>
+                <section class="card-article">
+                    <h3>
+                        Information System of Fishery
+                    </h3>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 50%;">50%</div>
+                    </div>
+                </section>
+                <div class="more">
+                    <button>more..</button>
+                </div>
+            </article>
+    
+        </div>
+        <!-- Konten samping -->
+        <aside>
+            <article class="profile card-profile">
+                <header>
+                    <h2>My Profile</h2>
+                    <figure>
+                        <img src="img/myavatar.jpg" />
+                    </figure>
+                </header>
+    
+                <section>
+    
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Imam Fauzy Muldani Rachmat</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>Jln.Cikaracak Ninggang Batu</td>
+                        </tr>
+                        <tr>
+                            <th>e-Mail</th>
+                            <td>imam@imam.com</td>
+                        </tr>
+                        <tr>
+                            <th>Mobile Phone</th>
+                            <td>089999999</td>
+                        </tr>
+                        <tr>
+                            <th>Job</th>
+                            <td>Educator</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+        <footer>
+            <div id="contact">
+        
+                <div class="image-container">
+                    <img src="img/contact.png"Contact Image">
+                </div>
+                <div class="form-container">
+                    <form action="#" method="post">
+        
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+        
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+        
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <p>&copy; 2023 My Portfolio. All rights reserved.</p>  
+        </footer>
+
+</body>
+<script>
+    function myFunction() {
+        var x = document.querySelector("#myTopnav ul");
+        x.classList.toggle("show");
+    }
+</script>
+</html>
